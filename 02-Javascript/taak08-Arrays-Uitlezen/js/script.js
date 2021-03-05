@@ -32,4 +32,22 @@ document.querySelector(".film9-naam").innerHTML = topFilms[8];
 document.querySelector(".film10-ranking").innerHTML = 10;
 document.querySelector(".film10-naam").innerHTML = topFilms[9];
 
+function kiesFavorieteFilm(){
+kies=prompt("Kies een nummer");
+if(kies<0 || kies >10 ){
+    alert("dit getal bestaat niet!");
+    return false;
+}else if(kies == null){
+    return false;
+}
+naam=document.querySelector(".film"+kies+"-naam").innerHTML;
+console.log(naam);
+document.querySelector(".film"+kies+"-naam").style.backgroundColor="blue";
+document.querySelector(".film"+kies+"-naam").style.color="white";
 
+}
+kiesFavorieteFilm();
+
+function Reload(){
+    location.reload();
+}
