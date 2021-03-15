@@ -16,3 +16,18 @@ document.querySelector(".film4-ranking").innerHTML = 4;
 document.querySelector(".film4-naam").innerHTML = topFilms[3];
 document.querySelector(".film5-ranking").innerHTML = 5;
 document.querySelector(".film5-naam").innerHTML = topFilms[4];
+ 
+function moveup(){
+document.querySelector(".btn2-up").innerHTML
+let up= topFilms[0];
+topFilms[0]=topFilms[1];
+topFilms[1]=topFilms[0];
+}
+
+
+function movedown(){
+
+}
+function resetList(){
+    location.reload();
+}
