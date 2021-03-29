@@ -17,4 +17,4 @@ for(i = 0; i < arrProductPrijs.length; i++){
     console.log("Product " + i + " : " +totaalprijs);
     printTotaal+=totaalprijs;
 }
-console.log("Totaal "+": "+printTotaal);
+console.log("Totaal "+" : "+printTotaal);
