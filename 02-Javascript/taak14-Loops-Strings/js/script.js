@@ -5,18 +5,12 @@ function outputLetters(str){
     }
 }
 
-var voorbeeldString = "Dit is een array van letters";
+var voorbeeldString = prompt("Vul je naam in ?");
 //console.log(voorbeeldString.length); // geeft terug: 
 function ouput(voorbeeldString){
-for (i = voorbeeldString.length; i <= 28; i++){
+for (i = 0 ; i < voorbeeldString.length; i++){
+    console.log(voorbeeldString[i]);
 }
 }
-console.log(voorbeeldString);
-bevestigen=prompt("Is dit de goede string ?  "+ voorbeeldString);
-if(bevestigen =="ja"){
-    alert("Oke");
-}
-else{
-    alert("false");
-}
-ouput();
+ouput(voorbeeldString);
+
